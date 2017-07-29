@@ -1,0 +1,334 @@
+/* ===============   Master Styles   ========================  */
+body {
+  margin: 2em;
+  background-color:#111;
+  font-size:18px;
+  padding-bottom:100px;
+}
+img.logo_img{
+  margin-bottom:-15px;
+}
+/*body, input[text], button {
+  color: #ccc;
+  font-family: Cambria, Georgia;
+
+}*/
+.rowOfData{
+  margin-top:10px;
+
+}
+/* items class */
+.items {
+  /*margin: 0 0 2em 0;*/
+  margin-top:5px;
+  list-style-type: none;
+  padding: 5px;
+  width: 24em;
+  border:dotted 3px red;
+}
+.items li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  /*margin: .5em;*/
+  padding: .3em 0;
+  height:30px;
+  margin-top:5px;
+  /*height: 1.6em;*/
+  border-radius: 4px;
+}
+.items li:hover {
+  color: #000;
+  background-color: #DDD;
+  left: .1em;
+}
+.items li.selected {
+  background-color: #CFD8DC;
+  color: #000;
+}
+.items li.selected:hover {
+  background-color: #BBD8DC;
+}
+.items .text {
+  position: relative;
+  top: -3px;
+}
+.items .badge {
+  display: inline-block;
+  /*font-size: small;*/
+  color: #000;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =======     app.component.css  =========== */
+
+/* =======     dashboard.component.css  =========== */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*h3 {
+  text-align: center; margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}*/
+.grid {
+  margin: 0;
+
+}
+.col-1-4 {
+  width: 25%;
+}
+.module {
+  padding: 0px;
+  text-align: center;
+  color: #bbb;
+  max-height: 60px;
+  min-width: 60px;
+  background-color: #222;
+  border-radius: 4px;
+  border:solid #000 1px;
+}
+.module:hover {
+  background-color: #3d3838;
+  cursor: pointer;
+  color: #bba;
+}
+.grid-pad {
+  padding: 10px 0;
+
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+
+/* =======     hero-detail.component.css  =========== */
+
+/* =======     hero-search.component.css  =========== */
+
+/* =======     heros.component.css  =========== */
+.selected {
+  background-color: #000 !important;
+  color: green;
+}
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  color: orange;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #000;
+  margin: .5em;
+  padding: .3em 0;
+  /*height: 1.6em;*/
+  border-radius: 4px;
+}
+.heroes li:hover {
+  color: #fff;
+  background-color: #000;
+  left: .05em;
+}
+.heroes li.selected:hover {
+  background-color: #000 !important;
+  color: white;
+}
+.heroes .text {
+  position: relative;
+  top: -3px;
+}
+.heroes .badge {
+  display: inline-block;
+  /*font-size: small;*/
+  color: green;
+  /*padding: 0.8em 0.7em 0 0.7em;*/
+ /*background-color: #111;*/
+  line-height: 1em;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+/* =======     buttons  =========== */
+button, input, textarea, a ,label{padding:10px;font-size:18px;}
+button {
+  color:green;
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #000;
+  border: solid 1px #000;
+  /*padding: 5px 10px;*/
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+
+}
+button:hover {
+  background-color: #000;
+  color:orange;
+}
+button.delete {
+  float:right;
+  margin-top: -3px;
+  margin-right: 4px;
+  background-color: #222 !important;
+  color:#bbb;
+  height:35px;
+  line-height:0;
+}
+button:disabled {
+  background-color: #222;
+  color: #444;
+  cursor: auto;
+}
+/* =======     anchors  =========== */
+
+a {
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+}
+/* Navigation link styles */
+nav a {
+  color:green;
+  /*padding: 5px 10px;*/
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: green;
+
+}
+nav a:hover {
+  color:#fff !important;
+  background-color: #000;
+}
+nav a.active {
+  color: green;
+}
+/* =======     inputs  =========== */
+input {
+  color:orange;
+  background-color:#000;
+  border:none;
+  height: 30px !important;
+  /*font-size: 1em;*/
+  /*padding-left: .4em;*/
+
+  width:200px;
+}
+
+textarea{
+  width:203px;
+  color:orange;
+  background-color:#000;
+  border:none;
+
+}
+
+.search-result{
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  width:195px;
+  height: 16px;
+  padding: 5px;
+  background-color: #000;
+  color:orange;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  color: #eee;
+
+}
+
+#search-box{
+  width: 200px;
+  height: 20px;
+border:none;
+  background-color:#000;
+  color:green;
+}
+/* =======     typography  =========== */
+h1 {
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+}
+h2, h3 , h4{
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+p{
+  color:#fff;
+}
+div {
+  color:orange;
+}
+label {
+  color:orange;
+  display: inline-block;
+  width: 10em;
+  margin: .5em 0;
+  color: green;
+  font-weight: regular;
+}
+
+
+
+/* =======     RWD  =========== */
+@media (max-width: 600px) {
+  .module {
+    /*font-size: 10px;*/
+    max-height: 75px; }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
+/* =======     section  =========== */
+
+/* =======     section  =========== */

@@ -1,0 +1,45 @@
+
+/*
+label {
+  display: inline-block;
+  width: 10em;
+  margin: .5em 0;
+  color: green;
+  font-weight: regular;
+}
+input {
+  color:orange;
+  background-color:#000;
+  border:none;
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  width:200px;
+}
+textarea{
+  width:203px;
+  color:orange;
+  background-color:#000;
+  border:none;
+}
+button {
+  color:green;
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #000;
+  border: solid 1px #000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+
+}
+button:hover {
+  background-color: #000;
+  color:orange;
+}
+button:disabled {
+  background-color: #222;
+  color: #444;
+  cursor: auto;
+}
+*/
